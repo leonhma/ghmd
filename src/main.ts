@@ -1,8 +1,9 @@
 import { program } from "commander";
 import { readFileSync, writeFileSync } from "fs";
-import fetch from 'node-fetch';
-import style from './index.scss'
-import showdown from 'showdown';
+import fetch from "node-fetch";
+import style from "./index.scss";
+
+import showdown from "showdown";
 
 program
     .name("ghmd")
@@ -13,8 +14,6 @@ program
 program.parse();
 
 const options = program.opts();
-
-console.log(options);
 
 (async () => {
     const md = readFileSync(options.input);
@@ -29,5 +28,8 @@ console.log(options);
         },
     }).then((res) => res.text());
     const markup = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>GHMD</title><style lang="css">${style}</style></head><body><article class="markdown-body" itemprop="text">${htmltext}</article></body></html>`;
-    writeFileSync(options.output || options.input.replace(/\.md$/, ".html"), markup);
+    writeFileSync(
+        options.output || options.input.replace(/\.md$/, ".html"),
+        markup
+    );
 })();

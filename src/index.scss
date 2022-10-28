@@ -1,5 +1,14 @@
 @import '@primer/css/index.scss';
 
+@import 'github-syntax-light/lib/github-light';
+
+pre, pre > * {
+    max-width: 100%;
+    word-wrap: break-word;
+    word-break: normal;
+    white-space: pre-wrap;
+    overflow: auto !important;
+}
 body {
     margin: 2em;
 }

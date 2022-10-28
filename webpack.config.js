@@ -16,15 +16,18 @@ module.exports = {
                     "sass-loader",
                 ],
                 type: "asset/source",
-            },
-            {
-                test: /\.css$/,
-                type: "asset/source",
-            },
+            }
         ],
     },
     resolve: {
         extensions: [".ts", ".js"],
+    },
+    experiments: {
+        buildHttp: {
+            allowedUris: [/githubassets\.com/],
+            cacheLocation: false,
+            upgrade: true
+        }
     },
     output: {
         path: __dirname,
