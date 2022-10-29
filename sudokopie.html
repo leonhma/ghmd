@@ -1,4 +1,14 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>GHMD</title><style lang="css">@charset "UTF-8";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+    <!-- sass stylesheet -->
+    <style lang="css">@charset "UTF-8";
 /*!
  * Primer CSS
  * https://primer.style
@@ -29885,17 +29895,22 @@ a.branch-name .octicon {
   color: #032f62;
 }
 
-pre, pre > * {
-  max-width: 100%;
-  word-wrap: break-word;
-  word-break: normal;
-  white-space: pre-wrap;
-  overflow: auto !important;
-}
-
 body {
   margin: 2em;
-}</style></head><body><article class="markdown-body" itemprop="text"><h1><a id="user-content-sudokopie" class="anchor" aria-hidden="true" href="#sudokopie"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sudokopie</h1>
+  overflow-x: hidden;
+}
+
+code, .highlight > pre {
+  white-space: pre-wrap !important;
+}
+
+pre {
+  overflow: hidden !important;
+}</style>
+</head>
+<body>
+    <article class="markdown-body" itemprop="text">
+        <h1><a id="user-content-sudokopie" class="anchor" aria-hidden="true" href="#sudokopie"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sudokopie</h1>
 <p><g-emoji class="g-emoji" alias="grey_question" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2754.png">❔</g-emoji> A3 <g-emoji class="g-emoji" alias="busts_in_silhouette" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f465.png">👥</g-emoji> 00122 <g-emoji class="g-emoji" alias="adult" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f9d1.png">🧑</g-emoji> Leonhard Masche <g-emoji class="g-emoji" alias="calendar" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4c6.png">📆</g-emoji> 25.10.2022</p>
 <h2><a id="user-content-lösungsidee" class="anchor" aria-hidden="true" href="#lösungsidee"><span aria-hidden="true" class="octicon octicon-link"></span></a>Lösungsidee</h2>
 <p>Die Idee zur Lösung basiert auf dem Brute-Force Lösungsweg. Da dieser mit $3!<em>3!<em>4</em>3!^3</em>3!^3<em>10!=2.4</em>10^{13}$ Kombinationsmöglichkeiten aber nicht in akzeptabler Zeit zu berechnen ist, wird sich einem Trick bedient: Die einzelnen Blöcke (3x3 Felder, 9 Blöcke) werden "gehasht" - also für jeden Block wird eine (nicht immer kollisionsfreie) Zahl berechnet - wodurch schnell geprüft werden kann, ob sich dieser Block an der richtigen Position befindet. Das ist möglich, da Spalten und Zeilen immer nur innerhalb eines Blockes verschoben werden dürfen.</p>
@@ -30098,4 +30113,7 @@ Die beiden Sudokus sind nicht ähnlich.
         <span class="pl-en">print</span>()
         <span class="pl-en">exit</span>()
     <span class="pl-en">print</span>()</pre></div>
-</article></body></html>
+
+    </article>
+</body>
+</html>

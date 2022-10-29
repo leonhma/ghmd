@@ -16,6 +16,10 @@ module.exports = {
                     "sass-loader",
                 ],
                 type: "asset/source",
+            },
+            {
+                test: /\.mustache$/,
+                type: "asset/source",
             }
         ],
     },

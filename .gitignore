@@ -1,6 +1,5 @@
 index.js
-README.html
-test.html
+*.html
 
 
 # Logs

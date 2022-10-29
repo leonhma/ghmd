@@ -523,6 +523,11 @@ function-bind@^1.1.1:
   resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
+github-syntax-dark@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/github-syntax-dark/-/github-syntax-dark-0.5.0.tgz#17046545ffaa041e582458001df968b7ec91c2ea"
+  integrity sha512-RoFaoOEmvX25k0FEV4PJ0y5McWZOI6ZKfFee7YzxKUzz2SErzFec9f2IpW2zbijzImx8s9Zsd5YvO01XxX7xVg==
+
 github-syntax-light@^0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/github-syntax-light/-/github-syntax-light-0.5.0.tgz#17466fdd3c08d756ce3f016ed18a2a1343ce0729"
@@ -695,6 +700,11 @@ mime-types@^2.1.27:
   integrity sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==
   dependencies:
     mime-db "1.52.0"
+
+mustache@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/mustache/-/mustache-4.2.0.tgz#e5892324d60a12ec9c2a73359edca52972bf6f64"
+  integrity sha512-71ippSywq5Yb7/tVYyGbkBggbU8H3u5Rz56fH60jGFgr8uHwxs+aSKeqmluIVzM0m0kB7xQjKS6qPfd0b2ZoqQ==
 
 neo-async@^2.6.2:
   version "2.6.2"
