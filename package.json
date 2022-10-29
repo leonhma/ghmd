@@ -26,6 +26,7 @@
     },
     "dependencies": {
         "commander": "^9.4.1",
+        "mime": "^3.0.0",
         "mustache": "^4.2.0",
         "node-fetch": "^3.2.10",
         "showdown": "^2.1.0"

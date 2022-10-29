@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "module": "CommonJS",
+        "target": "es2015",
         "esModuleInterop": true
     },
     "include": ["src/**/*", "declaration.d.ts"]
