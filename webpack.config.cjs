@@ -1,7 +1,9 @@
+const { join } = require('path');
+
 module.exports = {
     mode: "development",
-    entry: "./src/main.ts",
-    target: "node",
+    entry: "./src/ghmd.ts",
+    target: "node16",
     module: {
         rules: [
             {
@@ -31,11 +33,14 @@ module.exports = {
             allowedUris: [/githubassets\.com/],
             cacheLocation: false,
             upgrade: true
-        }
+        },
+        outputModule: true
     },
     output: {
-        path: __dirname,
-        filename: "index.js",
-        libraryTarget: "commonjs",
+        path: join(__dirname, 'dist'),
+        filename: "ghmd.js",
+        library: {
+            type: "module"
+        }
     },
 };

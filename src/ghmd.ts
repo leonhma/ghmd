@@ -1,8 +1,10 @@
+#!/usr/bin/env node
+
 import { program } from "commander";
 import { existsSync, readFileSync, writeFileSync } from "fs";
-import fetch from "node-fetch";
 import style from "./index.scss";
 import template from "./template.mustache";
+import fetch from "node-fetch"
 import { render } from "mustache";
 import { getType } from "mime";
 import { dirname, join } from "path";
